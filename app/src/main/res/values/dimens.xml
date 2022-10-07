@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimens name="im_width">100dp</dimens>
+    <dimens name="im_height">100dp</dimens>
+</resources>
