@@ -1,7 +1,5 @@
 package thiago.neves.appgaleriapublica;
 
-import static android.os.Build.VERSION_CODES.R;
-
 import android.content.ContentResolver;
 import android.content.ContentUris;
 import android.content.Context;
@@ -28,8 +26,8 @@ public class GalleryRepository {
     public List<ImageData> loadImageData(Integer limit, Integer offSet) throws FileNotFoundException {
 
         List<ImageData> imageDataList = new ArrayList<>();
-        int w = (int) context.getResources().getDimension(R.dimens.im_width);
-        int h = (int) context.getResources().getDimension(R.dimens.im_height);
+        int w = (int) context.getResources().getDimension(R.dimen.im_width);
+        int h = (int) context.getResources().getDimension(R.dimen.im_height);
 
         String[] projection = new String[] {MediaStore.Images.Media._ID,
                 MediaStore.Images.Media.DISPLAY_NAME,
