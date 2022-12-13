@@ -27,6 +27,10 @@ public class MainViewModel extends AndroidViewModel {
         pageLv = PagingLiveData.cachedIn(PagingLiveData.getLiveData(pager), viewModelScope);
     }
 
+    public LiveData<PagingData<ImageData>> getPageLv() {
+        return pageLv;
+    }
+
     // pega o tipo de vizualização selecionada na bottomNav
     public int getNavigationOpSelected() {
         return navigationOpSelected;
